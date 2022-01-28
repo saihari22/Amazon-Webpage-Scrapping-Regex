@@ -1,0 +1,30 @@
+def file_config(self):
+                with open('/home/sai/prod_reco/config/file_config.json') as config_file:
+                                data=json.load(config_file)
+                                self.author1=data["author"]
+                                self.title1=data["title"]
+                                self.isbn1=data["isbn_13"]
+                                self.publisher1=data["publisher"]
+                                self.buybox_price1=data["buybox_price"]
+                                #print "--------------",self.buybox_price
+                                self.buybox_type1=data["buybox_type"]
+                                self.publish_year1=data["publish_year"]
+                                self.buybox_shipping1=data["buybox_shipping"]
+                                self.edition1=data["edition"]
+                                self.length1=data["length"]
+                                self.breadth1=data["breadth"]
+                                self.width1=data["width"]
+                                self.ListPrice1=data["rrp"]
+                                self.sales_rank1=data["sales_rank"]
+                                self.fba1=data["fba"]
+                                self.total_sellers1=data["total_sellers"]
+                                self.binding1=data["binding"]
+                                self.domain1=data["domain"]
+                                self.category1=data["category"]
+                                self.sub_cat_sales_rank1=data["sub_cat_sales_rank"]
+                                self.product_description1=data["product_description"]
+                                self.img_url1=data["img_url"]
+                                self.item_weight1=data["item_weight"]
+                                self.mp_cat_id1=data["mp_cat_id"]
+                config_file.close()
+                return
